@@ -39,7 +39,7 @@ bot.on('interactionCreate', async (interaction) => {
 
     try {
       //Url apenas para teste de código
-      const response = await axios.POST(`https://api.chatpdf.com/v1/chat/como-funciona?token=${CHATPDF_API_TOKEN}`, {
+      const response = await axios.get(`https://api.chatpdf.com/v1/chat/como-funciona?token=${CHATPDF_API_TOKEN}`, {
         headers: {
           Authorization: `Bearer ${CHATPDF_API_TOKEN}`,
         },
